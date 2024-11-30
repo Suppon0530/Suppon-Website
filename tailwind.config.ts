@@ -11,12 +11,12 @@ export default {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-        base: '#242424',
-        main: '#fafafa',
-        accent: '#27b863',
+        base: '#fafafa',
+        main: '#242424',
+        accent: '#16d119',
       },
       gridTemplateRows: {
-        main: '5rem auto auto',
+        main: '4rem auto auto',
         home: '1fr auto auto auto',
       },
       gridTemplateColumns: {

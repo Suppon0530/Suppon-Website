@@ -16,33 +16,27 @@ export default function Header() {
   };
 
   return (
-    <header className='grid-cols-header bg-base fixed z-10 grid w-full shadow-md'>
-      <div className='col-start-1 content-center px-4 py-2'>
-        <Image
-          src={`${BASE_PATH}/suppon-icon.png`}
-          alt='Vercel logomark'
-          width={64}
-          height={64}
-          priority
-        />
+    <header className='fixed z-10 grid w-full grid-cols-header bg-base shadow-md'>
+      <div className='col-start-1 content-center'>
+        <Image src={`${BASE_PATH}/logo.png`} alt='Logo Mark' width={128} height={128} priority />
       </div>
       <div className='col-start-2 content-center justify-items-center px-8'>
-        <Link href='/' className='text-main text-2xl font-bold'>
+        <Link href='/' className='text-base font-bold text-main md:text-2xl'>
           すっぽんゲーム
         </Link>
       </div>
       <div className='col-start-3 content-center justify-items-end px-4'>
         <nav className='hidden md:flex'>
-          <Link href='/' className='text-main hover:text-accent px-2 text-center text-lg'>
+          <Link href='/' className='px-2 text-center text-lg text-main hover:text-accent'>
             Home
           </Link>
-          <Link href='/news' className='text-main hover:text-accent px-2 text-center text-lg'>
+          <Link href='/news' className='px-2 text-center text-lg text-main hover:text-accent'>
             News
           </Link>
-          <Link href='/works' className='text-main hover:text-accent px-2 text-center text-lg'>
+          <Link href='/works' className='px-2 text-center text-lg text-main hover:text-accent'>
             Works
           </Link>
-          <Link href='/contact' className='text-main hover:text-accent px-2 text-center text-lg'>
+          <Link href='/contact' className='px-2 text-center text-lg text-main hover:text-accent'>
             Contact
           </Link>
         </nav>
@@ -83,16 +77,16 @@ export default function Header() {
       {isOpen && (
         <div className='md:hidden'>
           <nav className='px-4 py-2'>
-            <Link href='/' className='text-main hover:text-accent block'>
+            <Link href='/' className='block text-main hover:text-accent'>
               Home
             </Link>
-            <Link href='/news' className='text-main hover:text-accent block'>
+            <Link href='/news' className='block text-main hover:text-accent'>
               News
             </Link>
-            <Link href='/works' className='text-main hover:text-accent block'>
+            <Link href='/works' className='block text-main hover:text-accent'>
               Works
             </Link>
-            <Link href='/contact' className='text-main hover:text-accent block'>
+            <Link href='/contact' className='block text-main hover:text-accent'>
               Contact
             </Link>
           </nav>
