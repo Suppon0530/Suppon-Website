@@ -17,11 +17,11 @@ export default function Header() {
 
   return (
     <header className='fixed z-10 grid w-full grid-cols-header bg-base shadow-md'>
-      <div className='col-start-1 content-center pr-4'>
+      <div className='col-start-1 content-center'>
         <Image src={`${BASE_PATH}/logo.png`} alt='Logo Mark' width={128} height={128} priority />
       </div>
       <div className='col-start-2 content-center justify-items-center px-8'>
-        <Link href='/' className='text-2xl font-bold text-main'>
+        <Link href='/' className='text-base font-bold text-main md:text-2xl'>
           すっぽんゲーム
         </Link>
       </div>
