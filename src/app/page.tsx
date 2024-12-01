@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BsTwitterX, BsGithub, BsYoutube, BsApple, BsGooglePlay } from 'react-icons/bs';
 import nextConfig from '../../next.config';
 const BASE_PATH = nextConfig.basePath || '';
 
@@ -115,13 +116,61 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='row-start-4 py-12'>
+      <div className='row-start-4 pt-12'>
         <h1 className='px-4 text-left text-3xl font-bold'>PROFILE</h1>
-        <p className='px-4 text-lg'>
-          テストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト
-          テストテストテストテストテストテストテストテストテストテスト
-          テストテストテストテストテスト
-        </p>
+        <div className='bg-main-sub flex flex-row items-center justify-center px-8 py-12'>
+          <div className='flex items-center text-base'>
+            <Image
+              className='border border-accent bg-base'
+              src={`${BASE_PATH}/suppon-icon.png`}
+              alt='yojijukugo-detective'
+              width={160}
+              height={160}
+              priority
+            />
+          </div>
+          <div className='pl-20 text-base'>
+            <p className='text-center text-xl font-bold text-accent'>すっぽん</p>
+            <p>個人スマホゲーム開発者。</p>
+            <p>
+              <span className='text-accent'>「興味が広がるきっかけを与えるゲーム」</span>
+              を目標に開発中！
+            </p>
+            <p>iOS・Androidで4つのゲームをリリース中！</p>
+            <div className='flex items-center justify-center pt-4'>
+              <a
+                href='https://twitter.com/Suppon0530'
+                className='px-2 text-center text-4xl hover:text-accent'
+              >
+                <BsTwitterX className='mr-2' />
+              </a>
+              <a
+                href='https://github.com/Suppon0530'
+                className='px-2 text-center text-4xl hover:text-accent'
+              >
+                <BsGithub className='mr-2' />
+              </a>
+              <a
+                href='https://www.youtube.com/channel/UCjNFegT4YzkqoU46LLSiryg'
+                className='px-2 text-center text-4xl hover:text-accent'
+              >
+                <BsYoutube className='mr-2' />
+              </a>
+              <a
+                href='https://apps.apple.com/us/developer/hiroto-nakahara/id1717568935'
+                className='px-2 text-center text-4xl hover:text-accent'
+              >
+                <BsApple className='mr-2' />
+              </a>
+              <a
+                href='https://play.google.com/store/apps/developer?id=Hiroto+Nakahara'
+                className='px-2 text-center text-4xl hover:text-accent'
+              >
+                <BsGooglePlay className='mr-2' />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );

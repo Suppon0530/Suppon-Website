@@ -13,6 +13,7 @@ export default {
         foreground: 'var(--foreground)',
         base: '#fafafa',
         main: '#242424',
+        'main-sub': '#4f4f4f',
         accent: '#16d119',
       },
       gridTemplateRows: {
