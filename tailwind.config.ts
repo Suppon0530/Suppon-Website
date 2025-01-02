@@ -9,12 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
-        base: '#fafafa',
-        main: '#242424',
-        'main-sub': '#4f4f4f',
-        accent: '#16d119',
+        'base-color': '#2F2B2A',
+        'base-sub-color': '#D4D5D9',
+        'main-color': '#36B385',
+        'accent-color': '#5632A6',
+        'black-color': '#141312',
+        'white-color': '#EDEEF2',
       },
       gridTemplateRows: {
         main: '4rem auto auto',
