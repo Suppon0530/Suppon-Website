@@ -142,57 +142,33 @@ export default function Home() {
       </div>
       <div className='pb-12 pt-6 text-base-sub-color'>
         <h1 className='px-4 text-left text-3xl font-bold text-main-color'>PROFILE</h1>
-        <div className='grid grid-cols-1 items-center justify-center px-4 sm:grid-cols-2'>
-          <div className='col-start-1 place-content-center place-items-center py-8 text-base'>
-            <Image
-              className='border border-main-color bg-base-sub-color'
-              src={`${BASE_PATH}/suppon-icon.png`}
-              alt='yojijukugo-detective'
-              width={160}
-              height={160}
-              priority
-            />
-          </div>
-          <div className='col-start-2 place-content-center px-4 text-base'>
-            <p className='text-center text-xl font-bold text-main-color'>すっぽん</p>
-            <p>個人スマホゲーム開発者。</p>
-            <p>
-              <span className='text-main-color'>「興味が広がるきっかけを与えるゲーム」</span>
-              を目標に開発中！
-            </p>
-            <p>iOS・Androidで4つのゲームをリリース中！</p>
-            <div className='flex items-center justify-center pt-4'>
-              <a
-                href='https://twitter.com/Suppon0530'
-                className='px-4 text-center text-4xl hover:text-main-color'
-              >
-                <BsTwitterX />
-              </a>
-              <a
-                href='https://github.com/Suppon0530'
-                className='px-4 text-center text-4xl hover:text-main-color'
-              >
-                <BsGithub />
-              </a>
-              <a
-                href='https://www.youtube.com/channel/UCjNFegT4YzkqoU46LLSiryg'
-                className='px-4 text-center text-4xl hover:text-main-color'
-              >
-                <BsYoutube />
-              </a>
-              <a
-                href='https://apps.apple.com/us/developer/hiroto-nakahara/id1717568935'
-                className='px-4 text-center text-4xl hover:text-main-color'
-              >
-                <BsApple />
-              </a>
-              <a
-                href='https://play.google.com/store/apps/developer?id=Hiroto+Nakahara'
-                className='px-4 text-center text-4xl hover:text-main-color'
-              >
-                <BsGooglePlay />
-              </a>
-            </div>
+        <div className='flex flex-col items-start justify-center px-4 pt-4 text-base'>
+          <p className='text-left text-xl font-bold text-main-color'>名前：すっぽん</p>
+          <p className='pt-2'>個人スマホゲーム開発者。</p>
+          <p>
+            <span className='text-lg text-main-color'>「興味が広がるきっかけを与えるゲーム」</span>
+            を目標に開発中！
+          </p>
+          <p>iOS・Androidで4つのゲームをリリース中！</p>
+          <div className='flex w-full items-center justify-center pt-6'>
+            <a
+              href='https://twitter.com/Suppon0530'
+              className='px-4 text-center text-4xl hover:text-main-color'
+            >
+              <BsTwitterX />
+            </a>
+            <a
+              href='https://github.com/Suppon0530'
+              className='px-4 text-center text-4xl hover:text-main-color'
+            >
+              <BsGithub />
+            </a>
+            <a
+              href='https://www.youtube.com/channel/UCjNFegT4YzkqoU46LLSiryg'
+              className='px-4 text-center text-4xl hover:text-main-color'
+            >
+              <BsYoutube />
+            </a>
           </div>
         </div>
       </div>
