@@ -51,9 +51,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='pb-12 pt-6 text-main-color'>
-        <h1 className='px-4 pb-4 text-left text-3xl font-bold'>NEWS</h1>
-        <div className='grid grid-cols-2 text-base-color md:grid-cols-4'>
+      <div className='pb-12 pt-6 text-base-sub-color'>
+        <h1 className='relative px-4 text-left text-3xl font-bold'>
+          NEWS
+          <span className='absolute -bottom-1 left-3 w-2/3 border-b-4 border-main-color'></span>
+          <span className='absolute -bottom-1 left-3 w-1/5 border-b-4 border-accent-color'></span>
+        </h1>
+        <div className='grid grid-cols-2 pt-4 text-base-color md:grid-cols-4'>
           <div className='place-content-center bg-base-sub-color px-4 pt-2'>
             <div className='flex flex-col pb-4'>
               <div className='self-center'>
@@ -141,7 +145,11 @@ export default function Home() {
         </div>
       </div>
       <div className='pb-12 pt-6 text-base-sub-color'>
-        <h1 className='px-4 text-left text-3xl font-bold text-main-color'>PROFILE</h1>
+        <h1 className='relative px-4 text-left text-3xl font-bold text-base-sub-color'>
+          PROFILE
+          <span className='absolute -bottom-1 left-3 w-2/3 border-b-4 border-main-color'></span>
+          <span className='absolute -bottom-1 left-3 w-1/5 border-b-4 border-accent-color'></span>
+        </h1>
         <div className='flex flex-col items-start justify-center px-4 pt-4 text-base'>
           <p className='text-left text-xl font-bold text-main-color'>名前：すっぽん</p>
           <p className='pt-2'>個人スマホゲーム開発者。</p>

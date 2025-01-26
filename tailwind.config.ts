@@ -16,13 +16,6 @@ export default {
         'black-color': '#141312',
         'white-color': '#EDEEF2',
       },
-      gridTemplateRows: {
-        main: '4rem auto auto',
-        home: '1fr auto auto auto',
-      },
-      gridTemplateColumns: {
-        header: 'auto auto 1fr',
-      },
     },
   },
   plugins: [],
