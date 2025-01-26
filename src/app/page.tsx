@@ -14,44 +14,57 @@ export default function Home() {
       <div className='pb-12 pt-28 md:pt-16'>
         <div className='flex snap-x snap-mandatory overflow-x-scroll'>
           <div className='w-full flex-none snap-center'>
-            <Image
-              src={`${BASE_PATH}/feature-deepsea.png`}
-              alt='feature-game'
-              width={2000}
-              height={2000}
-              priority
-            />
+            <Link href='/works/all-you-can-pack-sea-creatures'>
+              <Image
+                src={`${BASE_PATH}/feature-deepsea.png`}
+                alt='feature-game'
+                width={2000}
+                height={2000}
+                priority
+              />
+            </Link>
           </div>
           <div className='w-full flex-none snap-center'>
-            <Image
-              src={`${BASE_PATH}/feature-kanjishot.png`}
-              alt='feature-game'
-              width={2000}
-              height={2000}
-              priority
-            />
+            <Link href='/works/kanji-shot'>
+              <Image
+                src={`${BASE_PATH}/feature-kanjishot.png`}
+                alt='feature-game'
+                width={2000}
+                height={2000}
+                priority
+              />
+            </Link>
           </div>
           <div className='w-full flex-none snap-center'>
-            <Image
-              src={`${BASE_PATH}/feature-mushroom.png`}
-              alt='feature-game'
-              width={2000}
-              height={2000}
-              priority
-            />
+            <Link href='/works/covered-with-mushrooms'>
+              <Image
+                src={`${BASE_PATH}/feature-mushroom.png`}
+                alt='feature-game'
+                width={2000}
+                height={2000}
+                priority
+              />
+            </Link>
           </div>
           <div className='w-full flex-none snap-center'>
-            <Image
-              src={`${BASE_PATH}/feature-yojijukugo.png`}
-              alt='feature-game'
-              width={2000}
-              height={2000}
-              priority
-            />
+            <Link href='/works/yojijukugo-detective'>
+              <Image
+                src={`${BASE_PATH}/feature-yojijukugo.png`}
+                alt='feature-game'
+                width={2000}
+                height={2000}
+                priority
+              />
+            </Link>
           </div>
         </div>
+        <div className='flex justify-end px-8 pt-6'>
+          <button className='rounded-md bg-main-color px-6 text-lg font-bold text-white-color'>
+            MORE...
+          </button>
+        </div>
       </div>
-      <div className='pb-12 pt-6 text-base-sub-color'>
+      <div className='pb-12 pt-6 text-white-color'>
         <h1 className='relative px-4 text-left text-3xl font-bold'>
           NEWS
           <span className='absolute -bottom-1 left-3 w-2/3 border-b-4 border-main-color'></span>
@@ -145,9 +158,14 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div className='flex justify-end px-8 pt-6'>
+          <button className='rounded-md bg-main-color px-6 text-lg font-bold text-white-color'>
+            MORE...
+          </button>
+        </div>
       </div>
-      <div className='pb-12 pt-6 text-base-sub-color'>
-        <h1 className='relative px-4 text-left text-3xl font-bold text-base-sub-color'>
+      <div className='pb-12 pt-6 text-white-color'>
+        <h1 className='relative px-4 text-left text-3xl font-bold text-white-color'>
           PROFILE
           <span className='absolute -bottom-1 left-3 w-2/3 border-b-4 border-main-color'></span>
           <span className='absolute -bottom-1 left-3 w-1/5 border-b-4 border-accent-color'></span>
