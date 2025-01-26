@@ -28,12 +28,12 @@ export default function RootLayout({
   return (
     <html lang='ja'>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className='grid grid-rows-main'>
-          <div className='row-start-1'>
+        <div className='flex flex-col'>
+          <div>
             <Header />
           </div>
-          <div className='row-start-2'>{children}</div>
-          <div className='row-start-3'>
+          <div>{children}</div>
+          <div>
             <Footer />
           </div>
         </div>
