@@ -36,7 +36,9 @@ export async function getSortedPostsData(): Promise<PostMetadata[]> {
     };
   });
 
-  return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return allPostsData.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
 }
 
 // 個別記事データを取得
