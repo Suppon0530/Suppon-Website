@@ -20,13 +20,14 @@ export default async function Topics() {
     <div className='grid grid-cols-2 gap-4 px-4 pt-4 text-base-color md:grid-cols-4 md:gap-8 md:px-8'>
       {allPostsData.map(({ id, image, summary, date, title }) => (
         <div key={id}>
-          <Link href={`/topics/${id}`} className='text-base-color'>
+          <Link href={`/topics/${id}`} className='group text-base-color'>
             <div className='h-80 w-full place-content-start bg-base-sub-color px-3 py-3 md:w-11/12'>
               <div className='flex h-full flex-col justify-between'>
                 <div className='flex flex-col items-center'>
                   <Image
                     src={`${BASE_PATH}${image}`}
                     alt='app-icon'
+                    className='group-hover:opacity-70'
                     width={150}
                     height={150}
                     priority
