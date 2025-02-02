@@ -13,7 +13,7 @@ export async function generateStaticParams() {
   return paths.map((path) => ({ slug: path.params.slug }));
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
+export default async function Post({ params }: any) {
   const postData: PostData = await getPostData(params.slug);
 
   return (
